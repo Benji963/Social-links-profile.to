@@ -1,0 +1,90 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --ff: "Inter", sans-serif;
+  --fw-light: 400;
+  --fw-mid: 600;
+  --fw-bold: 700;
+  --fs: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile {
+  background-color: var(--Off-Black);
+  font-family: var(--ff);
+  height: 100vh;
+  padding-block: 9rem;
+}
+
+.wrapper {
+  background-color: var(--Dark-Grey);
+  display: grid;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  height: 610px;
+  width: 386px;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-info img {
+  margin: 2.1rem;
+  height: 87px;
+  border-radius: 50%;
+}
+
+.person-info h1 {
+  color: var(--White);
+}
+
+.location {
+  color: var(--Green);
+  font-size: var(--fs);
+  font-weight: var(--fw-mid);
+  margin-top: 0.7rem;
+}
+
+.job {
+  color: var(--White);
+  font-size: var(--fs);
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  width: 300px;
+}
+
+button {
+  background-color: var(--Grey);
+  color: var(--White);
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs);
+}
+
+.button :hover {
+  cursor: pointer;
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
